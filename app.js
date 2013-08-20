@@ -4,7 +4,7 @@
  */
 
 var express = require('express');
-// var cacheManifest = require('connect-cache-manifest');
+var cacheManifest = require('connect-cache-manifest');
 
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -31,6 +31,20 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+
+// cache-manifest
+app.use(cacheManifest({
+  manifestPath: '/application.manifest',
+  files: [{
+    file: __dirname + '/public/javascripts/foo.js',
+    path: '/javascripts/foo.js'
+  }, {
+    dir: __dirname + '/public',
+    prefix: '/'
+  }],
+  networks: ['*'],
+  fallbacks: []
+}));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
