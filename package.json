@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "express": "3.3.5",
+    "connect-cache-manifest": "*",
     "jade": "*"
   }
 }
