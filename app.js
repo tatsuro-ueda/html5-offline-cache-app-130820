@@ -29,7 +29,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/index.html', routes.index);
 app.get('/users', user.list);
 
 // cache-manifest
@@ -38,6 +38,8 @@ app.use(cacheManifest({
   files: [{
     file: __dirname + '/public/javascripts/test.js',
     path: '/javascripts/test.js'
+  }, {
+    path: '/index.html'
   }, {
     dir: __dirname + '/public',
     prefix: '/'
