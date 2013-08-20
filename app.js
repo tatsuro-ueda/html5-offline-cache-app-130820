@@ -36,8 +36,8 @@ app.get('/users', user.list);
 app.use(cacheManifest({
   manifestPath: '/application.manifest',
   files: [{
-    file: __dirname + '/public/javascripts/foo.js',
-    path: '/javascripts/foo.js'
+    file: __dirname + '/public/javascripts/test.js',
+    path: '/javascripts/test.js'
   }, {
     dir: __dirname + '/public',
     prefix: '/'
