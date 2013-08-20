@@ -4,7 +4,7 @@
  */
 
 var express = require('express');
-var cacheManifest = require('connect-cache-manifest');
+// var cacheManifest = require('connect-cache-manifest');
 
 var routes = require('./routes');
 var user = require('./routes/user');
