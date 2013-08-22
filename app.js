@@ -37,10 +37,10 @@ app.use(cacheManifest({
   manifestPath: '/application.manifest',
   files: [{
     // file: __dirname + '/public/javascripts/test.js',
-    path: '/javascripts/test.js'
-  }, {
-    path: '/index.html'
-  }, {
+  //   path: '/javascripts/test.js'
+  // }, {
+  //   path: '/index.html'
+  // }, {
     dir: __dirname + '/public',
     prefix: '/'
   }],
