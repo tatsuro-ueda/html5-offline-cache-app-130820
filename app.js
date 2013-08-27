@@ -234,7 +234,7 @@ app.use(cacheManifest({
   //   file: __dirname + '/public/pdf.js/web/images/loading-icon.gif',
   //   path: '/pdf.js/web/images/loading-icon.gif'
   // },
-  {
+  // {
     dir: __dirname + '/public',
     prefix: '/'
   }
