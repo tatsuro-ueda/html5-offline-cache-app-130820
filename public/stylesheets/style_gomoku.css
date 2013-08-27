@@ -1,0 +1,154 @@
+body {
+    background: #fefffa;
+    color:#000000;
+    margin: 0px;
+    padding: 0px;
+}
+
+A:link { color: black; }
+A:visited { color: black; }
+A:active { color: black; }
+A:hover { color: black; }
+
+a {
+  font-weight: 600;
+  color: #000066;
+  font-size: 15px;
+}
+
+img {
+    border-color:#ee2c1c;
+}
+
+#title {
+  width:70px;
+  margin-top:12px;
+  margin-left:20px;
+  float:left;
+  font-weight: 600;
+  color: #000000;
+  font-size: 12px;
+}
+
+#ctrlbt {
+  position:relative;
+  float:left;
+  width:65px;
+  height:30px;
+  margin-top:12px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #000066;
+  font-size: 12px;
+}
+
+#resetbt {
+  position:relative;
+  float:left;
+  width:68px;
+  height:30px;
+  margin-top:12px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #000066;
+  font-size: 12px;
+}
+
+#resizebt {
+  position:relative;
+  float:left;
+  width:60px;
+  height:30px;
+  margin-top:12px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #000066;
+  font-size: 12px;
+}
+
+#totop {
+  position:relative;
+  float:left;
+  width:60px;
+  height:30px;
+  margin-top:12px;
+  margin-left:12px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #000066;
+  font-size: 12px;
+}
+
+#others {
+  position:relative;
+  float:left;
+  width:90px;
+  height:30px;
+  margin-top:15px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #000066;
+  font-size: 12px;
+}
+
+#space {
+  clear: both;
+}
+
+#menu {
+  width:100%;
+  height:40px;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  background-color:#9edbf5;
+}
+
+
+#gamecontent {
+  width:100%;
+  height:445px;
+  top:40px;
+  margin:0px;
+  border:0px;
+  padding:0px;
+}
+
+#container {
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+#exp {
+  position:absolute;
+  top:535px;
+  font-size: 12px;
+  font-weight: bold;
+  width:500px;
+  height:100px;
+  margin-left:20px;
+  border:solid;5px;#000000;
+  padding-left:15px;
+  padding-top:15px;
+  color: #333333;
+  line-height:15px;
+  background-color:#eeeeee;
+}
+
+
+#shisenline2 {
+  position:absolute;
+  top:490px;
+  width:100%;
+  height:5px;
+  background-color:#aaaaaa;
+}
+
+#shisenline1 {
+  position:absolute;
+  top:35px;
+  width:100%;
+  height:5px;
+  background-color:#aaaaaa;
+}

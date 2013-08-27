@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>五目並べ(HTML5版) for iPhone/iPad/アンドロイド/スマートフォン</title>
+<link href="stylesheets/style_gomoku.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript"><!--//
+var ip=false;
+if(navigator.userAgent.indexOf('iPhone') > 0
+    || navigator.userAgent.indexOf('iPod') > 0
+    || navigator.userAgent.indexOf('Android') > 0) {
+     ip=true;
+}
+if(ip==true) {
+  document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">');
+}
+else {
+  document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">');
+}
+//--!></script>
+</head>
+<body>
+
+<script language="JavaScript" type="text/javascript"><!--//
+sp=false;
+if(navigator.userAgent.indexOf('iPhone') > 0
+    || navigator.userAgent.indexOf('iPad') > 0
+    || navigator.userAgent.indexOf('Android') > 0) {
+     sp=true;
+}
+else sp=false;
+
+if(sp==true) {
+  document.write("<canvas id='displaycanvas' width='600px' height='680px' style='position: absolute; left: 0; top: 0; z-index: 10000;'></canvas>");
+  document.write("<canvas id='drawcanvas' width='600px' height='680px' style='position: absolute; left: 0; top: 0; z-index: 10020;'></canvas>");
+  document.write("<canvas id='touchcanvas' width='600px' height='680px' style='position: absolute; left: 0; top: 0; z-index: 10040;'></canvas>");
+}
+else {
+  document.write("<canvas id='displaycanvas' width='1280px' height='800px' style='position: absolute; left: 0; top: 0; z-index: 10000;'></canvas>");
+  document.write("<canvas id='drawcanvas' width='1280px' height='800px' style='position: absolute; left: 0; top: 0; z-index: 10020;'></canvas>");
+  document.write("<canvas id='touchcanvas' width='1280px' height='800px' style='position: absolute; left: 0; top: 0; z-index: 10040;'></canvas>");
+}
+
+//--!></script>
+
+<div id="menu">
+<div id="title">五目並べ</div>
+<div id="ctrlbt"></div>
+<div id="totop">リセット</div>
+<div id="resetbt">トップへ</div>
+</div>
+<div id="container">
+<script type="text/javascript" src="javascripts/gomoku.js"></script>
+</div>
+<div id="exp">
+■碁盤を使ったシンプルな対戦ゲームです。<br />
+■コンピューターと交互に、マス目の交点に碁石を置いていきます。<br />
+■先に、自分の色の碁石を、縦・横・斜めに5個つなげるた方が勝ちとなります。<br />
+</div>
+
+</body>
+</html>

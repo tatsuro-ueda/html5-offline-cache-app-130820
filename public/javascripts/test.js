@@ -1,5 +1,5 @@
-  var alertHelloWorld3;
+  var alertHelloWorld;
 
-  alertHelloWorld3 = function() {
+  alertHelloWorld = function() {
     return window.alert('Hello World!');
   };
