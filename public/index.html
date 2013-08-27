@@ -26,12 +26,12 @@ else {
 
 <script language="JavaScript" type="text/javascript"><!--//
 sp=false;
-// if(navigator.userAgent.indexOf('iPhone') > 0
-//     || navigator.userAgent.indexOf('iPad') > 0
-//     || navigator.userAgent.indexOf('Android') > 0) {
-//      sp=true;
-// }
-// else sp=false;
+if(navigator.userAgent.indexOf('iPhone') > 0
+    || navigator.userAgent.indexOf('iPad') > 0
+    || navigator.userAgent.indexOf('Android') > 0) {
+     sp=true;
+}
+else sp=false;
 
 if(sp==true) {
   document.write("<canvas id='displaycanvas' width='600px' height='680px' style='position: absolute; left: 0; top: 0; z-index: 10000;'></canvas>");
