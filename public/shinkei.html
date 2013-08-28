@@ -3,7 +3,8 @@
 <head>
 <title>神経衰弱</title>
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.5, minimum-scale=0.5">
-<link href="style_shinkei.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/style_shinkei.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -27,8 +28,8 @@
 <div id="line"></div>
 <div id="gamecontent">
 
-<script type="text/javascript" src="./shinkei.js"></script>
-<script language="JavaScript" type="text/javascript"><!--//
+<script type="text/javascript" src="js/shinkei.js"></script>
+<script language="JavaScript" type="text/javascript">
 var canvas_width=740;
 var canvas_height=880;
 document.write("<canvas id='basecanvas' width='"+(canvas_width)+"' height='"+(canvas_height)+"' style='position: absolute; left: 0; top: 0; z-index: 6;'></canvas>");
@@ -39,7 +40,7 @@ document.write("<canvas id='drawcanvas1' width='"+(canvas_width)+"' height='"+(c
 document.write("<canvas id='displaycanvas2' width='"+(canvas_width)+"' height='"+(canvas_height)+"' style='position: absolute; left: 0; top: 0; z-index: 14;'></canvas>");
 document.write("<canvas id='touchcanvas' width='"+(canvas_width)+"' height='"+(canvas_height)+"' style='position: absolute; left: 0; top: 0; z-index: 15;'></canvas>");
 
-//--!></script>
+</script>
 </div>
 <div id="exp">
 ■記憶力を競うトランプゲーム、「神経衰弱」です。<br />
@@ -47,6 +48,10 @@ document.write("<canvas id='touchcanvas' width='"+(canvas_width)+"' height='"+(c
 ■最終的にコンピューターより多くのカードを取れたら勝ちとなります。
 </div>
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.10.2.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
