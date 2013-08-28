@@ -33,15 +33,15 @@ app.get('/index.html', routes.index);
 app.get('/users', user.list);
 
 // cache-manifest
-// app.use(cacheManifest({
-//   manifestPath: '/application.manifest',
-//   files: [{
-//     dir: __dirname + '/public',
-//     prefix: '/'
-//   }],
-//   networks: ['*'],
-//   fallbacks: []
-// }));
+app.use(cacheManifest({
+  manifestPath: '/application.manifest',
+  files: [{
+    dir: __dirname + '/public',
+    prefix: '/'
+  }],
+  networks: ['*'],
+  fallbacks: []
+}));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
