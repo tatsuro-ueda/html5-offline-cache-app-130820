@@ -29,7 +29,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-// app.get('/index.html', routes.index);
+app.get('/index.html', routes.index);
 app.get('/users', user.list);
 
 // cache-manifest
