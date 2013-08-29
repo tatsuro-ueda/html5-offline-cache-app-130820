@@ -58,5 +58,23 @@ document.write("<canvas id='touchcanvas' width='"+(canvas_width)+"' height='"+(c
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+      $(function(){
+        //ページ内のaタグ群を取得。aTagsに配列として代入。
+        var aTags = $('a');
+        //全てのaタグについて処理
+        aTags.each(function(){
+          //aタグのhref属性からリンク先url取得
+          var url = $(this).attr('href');
+      　　 //念のため、href属性は削除
+          $(this).removeAttr('href');
+          //クリックイベントをバインド
+          $(this).click(function(){
+            location.href = url;
+          });
+        });
+      });
+    </script>
+
 </body>
 </html>
